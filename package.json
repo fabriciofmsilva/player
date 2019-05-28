@@ -1,0 +1,23 @@
+{
+  "name": "audio",
+  "version": "1.0.0",
+  "description": "A simple PWA audio listener",
+  "main": "index.js",
+  "scripts": {
+    "lh": "lighthousebot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabriciofmsilva/audio.git"
+  },
+  "author": "Fabrício Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabriciofmsilva/audio/issues"
+  },
+  "homepage": "https://github.com/fabriciofmsilva/audio#readme",
+  "devDependencies": {
+    "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git"
+  }
+}

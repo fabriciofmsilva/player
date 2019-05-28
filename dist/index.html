@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple audio ppp</title>
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2F3BA2">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Audio App">
+  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+
+  <meta name="description" content="A simple audio app">
+
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <h1>Audio App</h1>
+  <p>Under construction</p>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker
+          .register('/service-worker.js')
+          .then((reg) => {
+            console.log('Service worker registered.', reg);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
