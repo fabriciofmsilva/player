@@ -11,15 +11,19 @@ install:
   - npm install
 before_script:
   - npm prune
+  - npm install -g firebase-tools
 script:
-  - npm run build
-  # - npm test
+  - echo "skipping lint"
+  # - npm run lint
   - echo "skipping tests"
+  # - npm run test
+  - npm run build
   # create .nojekyll files
   # We are telling GitHub to not process this branch using jekyll
   - touch .nojekyll
 after_success:
-  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then npm run lh -- --perf=80 --pwa=80 --a11y=80 --bp=80 --seo=80 https://fabriciofmsilva.com.br/notes-app/; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then firebase deploy --token $FIREBASE_TOKEN --non-interactive; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then npm run lh -- --perf=80 --pwa=80 --a11y=80 --bp=80 --seo=80 https://audio-31d49.firebaseapp.com; fi'
 deploy:
   provider: pages
   skip_cleanup: true
