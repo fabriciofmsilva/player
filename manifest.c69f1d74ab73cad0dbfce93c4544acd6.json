@@ -27,5 +27,6 @@
   "display": "standalone",
   "start_url": ".",
   "description": "A Simple Audio App",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
 }
