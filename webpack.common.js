@@ -60,6 +60,7 @@ module.exports = {
       short_name: 'AudioApp',
       description: 'A Simple Audio App',
       background_color: '#ffffff',
+      theme_color: '#ffffff',
       icons: [
         {
           src: path.resolve('src/images/icons/icon.png'),
