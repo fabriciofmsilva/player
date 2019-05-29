@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Simple audio ppp</title>
+  <title>Audio App</title>
 
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#2F3BA2">
@@ -19,8 +19,44 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <h1>Audio App</h1>
-  <p>Under construction</p>
+  <nav class="nav">
+    <a href="/">Home</a>
+  </nav>
+
+  <div class="form-group">
+    <label for="audioURL">Audio URL</label>
+    <input class="form-control" id="audioURL" type="text">
+  </div>
+
+  <div class="form-group">
+    <button class="button" data-action="add">Add</button>
+  </div>
+
+  <hr>
+
+  <div class="form-group">
+    <audio class="audio" controls></audio>
+  </div>
+
+  <div class="form-group">
+    <button class="button" data-action="speed-increase">+ 0.5</button>
+    <button class="button" data-action="speed-decrease">- 0.5</button>
+    <button class="button" data-action="play">Play 2x</button>
+  </div>
+  
+  <div class="ads">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- fabriciofmsilva_audio -->
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-2890790373732091"
+      data-ad-slot="2887652525"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 
   <script src="app.js"></script>
   <script>
@@ -33,6 +69,12 @@
           });
       });
     }
+  </script>
+  <script type="text/javascript">
+    var _gaq=[['_setAccount','{{ site.analytics }}'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 </body>
 </html>
