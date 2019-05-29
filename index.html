@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Audio App</title>
 
-  <link rel="manifest" href="/manifest.json">
+  <!-- <link rel="manifest" href="/manifest.json"> -->
   <meta name="theme-color" content="#2F3BA2">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,9 +15,7 @@
   <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
 
   <meta name="description" content="A simple audio app">
-
-  <link rel="stylesheet" href="app.css">
-</head>
+<link rel="manifest" href="manifest.63d592d62a59eb0dab355bb36b3c1bef.json" /><link href="main.c9ea97f0a89ac887c497.css" rel="stylesheet"></head>
 <body>
   <header class="header">
     <nav class="nav">
@@ -48,10 +46,10 @@
     <button class="button" data-action="play">Play 2x</button>
   </div>
   
-  <div class="ads">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <div class="ads">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
     <!-- fabriciofmsilva_audio -->
-    <ins class="adsbygoogle"
+    <!-- <ins class="adsbygoogle"
       style="display:block"
       data-ad-client="ca-pub-2890790373732091"
       data-ad-slot="2887652525"
@@ -60,29 +58,10 @@
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-  </div>
+  </div> -->
 
   <footer class="footer">
     <small>© Fabrício Silva, <time data-current-year></time></small>
   </footer>
-
-  <script src="app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker
-          .register('/service-worker.js')
-          .then((reg) => {
-            console.log('Service worker registered.', reg);
-          });
-      });
-    }
-  </script>
-  <script type="text/javascript">
-    var _gaq=[['_setAccount','{{ site.analytics }}'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-</body>
+<script type="text/javascript" src="main.c9ea97f0a89ac887c497.js"></script></body>
 </html>

@@ -1,0 +1,31 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.e383489f675e31907ff3736b80745b8d.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.049911e843023a6b4cbdbaa90dfe5599.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.50b614b25e04baef7ffcd87c938a69fb.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.d10b9a8851a612a93519d28a0cb881f0.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "name": "Audio App",
+  "short_name": "AudioApp",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "A Simple Audio App",
+  "background_color": "#ffffff"
+}
