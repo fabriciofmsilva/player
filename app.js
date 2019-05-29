@@ -62,3 +62,10 @@ function speedDecrease(current) {
 function speedIncrease(current) {
   return current + .5;
 }
+
+function setCurrentYear() {
+  const timeEl = document.querySelector('[data-current-year]');
+  timeEl.innerHTML = new Date().getFullYear();
+}
+
+setCurrentYear();
