@@ -12,8 +12,7 @@ install:
 before_script:
   - npm prune
 script:
-  # - npm run build
-  - echo "skipping build"
+  - npm run build
   # - npm test
   - echo "skipping tests"
   # create .nojekyll files
