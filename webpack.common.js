@@ -73,5 +73,8 @@ module.exports = {
       clientsClaim: true,
       skipWaiting: true,
     })
-  ]
+  ],
+  performance: {
+    hints: 'warning'
+  },
 };
