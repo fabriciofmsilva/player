@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Template Example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/dialog-polyfill@0.4.10/dialog-polyfill.css" />
+    
+    <script src="https://unpkg.com/dialog-polyfill@0.4.10/dialog-polyfill.js"></script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    
+    <script src="script.js" defer></script>
+  </head>  
+  <body>
+    <template id="dialog-template">
+      <dialog>
+        <p></p>
+        <button>⚓️ All Ashore!</button>
+      </dialog>
+    </template>
+
+    <label for="input">Type a <abbr title="message"> 💌</abbr>, Why don'tcha?</label>
+    <input id="input"/>
+
+    <button id="clone-it"><abbr title="Go!">🦑 Ahoy!</abbr></button>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+/* CSS files add styling rules to your content */
+
+html {
+  --lazy-image-height: 720px;
+  --lazy-image-width: 1080px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background: palegreen;
+}
+
+lazy-image {
+  width: var(--lazy-image-width);
+  height: var(--lazy-image-height);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+paper-card {
+  border-radius: 12px;
+}

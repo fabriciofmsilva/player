@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Shadow DOM Example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="script.js" defer></script>
+  </head>  
+  <body>
+    <template id="component-template">
+      <style>
+        :host {
+          display: block;
+        }
+
+        /* These styles apply only to button Elements
+         * within the shadow root of this component */
+        button {
+          background: rebeccapurple;
+          color: inherit;
+          font-size: inherit;
+          padding: 10px;
+          border-radius: 4px;
+          /* CSS Custom Properties can pierce the shadow boundary,
+           * allowing users to style specific parts of components */
+          border: 1px solid var(--component-border-color, ivory);
+          width: 100%;
+        }
+
+      </style>
+
+      <!-- This ID is local to the shadow-root. -->
+      <!-- No need to worry that another #button exists. -->
+      <button id="button">I'm an awesome button!</button>
+    </template>
+
+    <style>
+      /* These styles affect the entire document, but not any shadow-roots inside of it */
+      button {
+        background: cornflowerblue;
+        color: white;
+        padding: 10px;
+        border: none; 
+        margin-top: 20px;
+      }
+              
+      /* Custom Elements can be styled just like normal elements.
+       * These styles will be applied to the element's :host */
+      button,
+      awesome-button {
+        width: 280px;
+        font-size: inherit;
+      }
+    </style>
+
+    <awesome-button></awesome-button>
+    
+    <button id="button">I'm an OK button!</button>
+    
+    <section id="display"><abbr title="click">🖱</abbr> a <abbr title="button">🔲</abbr></section>
+  </body>
+</html>

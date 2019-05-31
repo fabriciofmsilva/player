@@ -1,0 +1,27 @@
+/* CSS files add styling rules to your content */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  background-color: darkslateblue;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+p,
+small {
+  display: block;
+}

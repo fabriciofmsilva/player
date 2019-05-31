@@ -1,0 +1,15 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  background: teal;
+  color: ivory;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100vh;
+}
+
+#display {
+  margin-top: 20px;
+}

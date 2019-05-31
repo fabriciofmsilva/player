@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Be Excellent to Each Other</title>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@power-elements/lazy-image/lazy-image.js?module"></script>
+    <script type="module" src="https://unpkg.com/@polymer/paper-card/paper-card.js?module"></script>
+    <script type="module" src="https://unpkg.com/@granite-elements/granite-alert/granite-alert.js?module"></script>
+    <script type="module" src="https://unpkg.com/@material/mwc-button/mwc-button.js?module"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cross-platform, Framework-Agnostic, Reusable Components</h1>
+    </header>
+    <main hidden>
+      
+      <granite-alert level="info">
+        Click the Button to Load
+        <mwc-button id="button" raised>🚀 Launch</mwc-button>
+      </granite-alert>
+      
+      
+      <paper-card heading="Hey Now!">
+        <div class="card-content" hidden>
+          <lazy-image role="presentation" src="https://placekitten.com/1080/720" alt="a cute kitten">
+             <img slot="placeholder" src="https://web-components-resources.appspot.com/static/logo.svg"/>
+          </lazy-image>
+        </div>
+      </paper-card>
+      
+    </main>
+  </body>
+</html>
