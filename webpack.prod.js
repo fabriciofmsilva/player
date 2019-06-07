@@ -26,4 +26,9 @@ module.exports = merge(common, {
       }),
     ],
   },
+  performance: {
+    maxAssetSize: 100000,
+    maxEntrypointSize: 300000,
+    hints: 'warning'
+  },
 });
