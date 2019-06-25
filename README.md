@@ -1,5 +1,6 @@
-# audio
-A simple PWA audio listener
+# Web audio player
+
+A simple web audio player
 
 ## References
 
