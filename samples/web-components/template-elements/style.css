@@ -1,0 +1,68 @@
+/* CSS files add styling rules to your content */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: moccasin;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+button, label {
+ min-width: 30vw;
+ margin: 10px auto;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 0 rebeccapurple;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 48px;
+}
+
+button:focus,
+button:hover {
+  box-shadow: 0 2px 0 rebeccapurple;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+button:active {
+  box-shadow: 0 1px 0 rebeccapurple;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+body dialog {
+  background: skyblue;
+}
+
+label {
+  display: flex;
+}
+
+input {
+  padding: 0 4px;
+  box-sizing: border-box;
+  margin-left: 4px;
+  font-size: 48px;
+  background-color: rgba(255,255,255,0.5);
+  border: none;
+  border-bottom: 4px dotted rgba(0,0,0,0.5);
+}
+
+abbr {
+  text-decoration: none;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}

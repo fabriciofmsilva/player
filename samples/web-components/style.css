@@ -1,0 +1,75 @@
+/* applies to the whole document. */
+
+html {
+  --hue: .50turn;
+  --lazy-image-width: 400px;
+  --lazy-image-height: 200px;
+}
+
+/* applies to specific elements */
+
+lazy-image:last-of-type {
+  --lazy-image-width: 100%;
+  --lazy-image-height: 100%;
+  --lazy-image-fade-duration: 2s;
+  --lazy-image-fade-easing: linear;
+}
+
+lazy-image {
+  width: 400px;
+  height: 200px;
+}
+
+header {
+  display: flex;
+}
+
+button {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 2em;
+  background: hsl(var(--hue), 30%, 20%, 1);
+  color: hsl(var(--hue), 100%, 80%);
+  border: none;
+  border-radius: 4px;
+  padding: 0.161em 0.61em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  box-shadow: 1px 1px 1px #222;
+}
+
+button:active {
+  background: #222;
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
+
+[hidden] {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background: hsl(var(--hue), 100%, 90%);
+}
+
+body, #lazy-images {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2 {
+  margin-top: 0;
+  font-style: italic;
+  color: hsl(var(--hue), 100%, 20%);
+}
+
+#lazy-images {
+  transition: transform 0.3s ease;
+  transform: translateY(120vh);
+}

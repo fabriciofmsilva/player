@@ -1,0 +1,14 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: dimgray;
+  color: white;
+  min-height: 100vh;
+  font-size: 10vh;
+}
