@@ -1,4 +1,8 @@
 body {
+  height: 100%;
+  font-family: "Calibri", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
   color: #ecf0f1;
   background-color: #2c3e50;
 }
@@ -61,4 +65,22 @@ hr {
 .button:hover {
   background-color: #226c9d;
   border-color:#226c9d;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem .5rem;
+  text-align: center;
+  background-color: #2d3436;
+}
+
+.copy {
+  font-size: 1.2rem;
+}
+
+.icon-heart {
+  color: #d63031;
 }
