@@ -12,14 +12,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "icon_512x512.e383489f675e31907ff3736b80745b8d.png"
   },
   {
-    "revision": "21db385085a2a5da2189dabc7471da6f",
+    "revision": "74f2d727c1b771c5ac0aa6e1be8e7c47",
     "url": "index.html"
   },
   {
-    "url": "main.f1f3c40c8a12477eb7ef.css"
+    "url": "main.8614d1be07272bf8d03c.css"
   },
   {
-    "url": "main.f1f3c40c8a12477eb7ef.js"
+    "url": "main.8614d1be07272bf8d03c.js"
   },
   {
     "url": "manifest.c69f1d74ab73cad0dbfce93c4544acd6.json"
