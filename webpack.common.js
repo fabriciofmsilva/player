@@ -56,9 +56,9 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
     new WebpackPwaManifest({
-      name: 'Audio App',
-      short_name: 'AudioApp',
-      description: 'A Simple Audio App',
+      name: 'Web Audio Player App',
+      short_name: 'WebAudioPlayer',
+      description: 'A simple web audio player app',
       background_color: '#ffffff',
       theme_color: '#ffffff',
       icons: [
